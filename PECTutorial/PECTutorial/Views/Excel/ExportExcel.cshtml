@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Export Excel";
+}
+@model List<EmployeeViewModel>
+
+<h1 class="bg-info text-white">Export Excel</h1>
+  
+<a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Back</a>
+
+<form method="post">
+    <table class="table table-sm table-bordered">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Designation</th>
+            <th>Salary</th>
+            <th>Date of Birth</th>
+            <th></th>
+        </tr>
+
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            <tr>
+                <td>
+                    <label asp-for="@Model[i].Id">@Model[i].Id</label>
+                    <input type="hidden" asp-for="@Model[i].Id" />
+                </td>
+                <td><label asp-for="@Model[i].Name">@Model[i].Name</label></td>
+                <td><label asp-for="@Model[i].Name">@Model[i].Designation</label></td>
+                <td><label asp-for="@Model[i].Name">@Model[i].Salary</label></td>
+                <td><label asp-for="@Model[i].Name">@Model[i].DOB</label></td>
+                <td><input type="checkbox" asp-for="@Model[i].IsChecked" /></td>
+            </tr>
+        }
+    </table>
+    <button type="submit" class="btn btn-primary">Export Excel</button>
+</form>

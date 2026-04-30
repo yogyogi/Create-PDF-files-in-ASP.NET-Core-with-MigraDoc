@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-5">Check the Below Links:</h1>
+    <h2>
+        Tutorial Link - <a target="_blank" href="https://www.yogihosting.com/aspnet-core-pdf-migradoc/" rel="noopener noreferrer">Create PDF with MigraDoc</a>
+    </h2>
+
+    <ul class="list-group display-6">
+        <li class="list-group-item bg-warning"><a asp-controller="Home" asp-action="PDF">Create PDF File</a></li>
+    </ul>
+
+    <h2>
+        Tutorial Link - <a target="_blank" href="https://www.yogihosting.com/aspnet-core-import-export-excel/" rel="noopener noreferrer">Import Export Excel in ASP.NET Core</a>
+    </h2>
+
+    <ul class="list-group display-6">
+        <li class="list-group-item bg-warning"><a asp-controller="Excel" asp-action="ImportExcel">Import Excel</a></li>
+    </ul>
+
+    <ul class="list-group display-6">
+        <li class="list-group-item bg-warning"><a asp-controller="Excel" asp-action="ImportExcelOpenXml">Import Excel (by OpenXml)</a></li>
+    </ul>
+
+    <ul class="list-group display-6">
+        <li class="list-group-item bg-warning"><a asp-controller="Excel" asp-action="ExportExcel">Export Excel</a></li>
+    </ul>
+
+    <h2>
+        Tutorial Link - <a target="_blank" href="https://www.yogihosting.com/aspnet-core-import-export-csv/" rel="noopener noreferrer">Import Export CSV in ASP.NET Core</a>
+    </h2>
+
+    <ul class="list-group display-6">
+        <li class="list-group-item bg-warning"><a asp-controller="Csv" asp-action="ImportCsv">Import CSV</a></li>
+    </ul>
+
+    <ul class="list-group display-6">
+        <li class="list-group-item bg-warning"><a asp-controller="Csv" asp-action="ExportCsv">Export CSV</a></li>
+    </ul>
+</div>

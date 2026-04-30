@@ -1,0 +1,19 @@
+﻿@model ListBindingViewModel
+
+<form asp-action="EditList" method="post">
+    @for (int i = 0; i < Model.Items.Count; i++)
+    {
+        <div>
+            @* The asp-for tag helper generates name attributes like Items[0].IsSelected, Items[0].Name, etc. *@
+            <input type="checkbox" asp-for="Items[i].IsSelected" />
+            <label asp-for="Items[i].IsSelected">@Model.Items[i].Name</label>
+            
+            @* Hidden fields are needed to post non-checkbox values *@
+            <input type="hidden" asp-for="Items[i].Id" />
+            <input type="hidden" asp-for="Items[i].Name" />
+        </div>
+    }
+    <div class="form-group">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>
