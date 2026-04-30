@@ -10,16 +10,26 @@ This repository covers:
 
 MigraDoc is a popular .NET library used in ASP.NET Core applications to generate structured PDF documents programmatically. It creates rich documents with elements like paragraphs, tables, headers, and images. Here we will create a complete PDF file with MigraDoc. The complete tutorial can be read from - <a href="https://www.yogihosting.com/aspnet-core-pdf-migradoc/" target="_blank">YogiHosting</a>.
 
-## What is covered in PDF
+## What is covered for PDF
 
 - [x] Adding Headings in PDF
 - [x] Adding Paragraps in PDF
 - [x] Adding Images in PDF
 - [x] Adding Tabes in PDF
 
+## What is covered for Excel
+
+- [x] Importing Excel files data to Database
+- [x] Exporting database data to Excel files
+
+## What is covered for CSV
+
+- [x] Importing CSV files data to Database
+- [x] Exporting database data to CSV files
+
 ## How to run the app
 
-Just run the app and create your PDF file. Modify the code to create the pdf file in the way you want.
+Just run the app and use it.
 
 ## Support
 
